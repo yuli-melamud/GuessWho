@@ -1,7 +1,7 @@
 # Guess Who
 The Guess Who Program is meant to be a fun game for two users that mimics the board game "Guess Who".
 
-On the right side of the screen, it displays a random face and on the right side it displays a board with all of the faces. The objective for each player is to find out what face the other player has. The players do this by taking turns in asking yes/no questions that would help them narrow down their options. After each question, the user can eliminate faces by clicking on them which turns their image into a black image.
+On the left side of the screen, it displays a random face and on the right side it displays a board with all of the faces. The objective for each player is to find out what face the other player has. The players do this by taking turns in asking yes/no questions that would help them narrow down their options. After each question, the user can eliminate faces by clicking on them which turns their image into a black image.
 
 For example, in a turn, player1 may ask if player2 if their person is a female. If it is, player1 can click on all of the males since those cannot be the player2's person.
 
