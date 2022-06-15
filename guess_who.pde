@@ -37,6 +37,7 @@ void draw() {
 }
 
 void mouseClicked() {
+ 
   //check if click is in the image area
   if (mouseX >= 720) {
     //find the closest image x and y to where the user clicked
@@ -45,20 +46,27 @@ void mouseClicked() {
     int black_y = mouseY / 200;
     black_y = black_y * 200;
     
-    //check if the clicked position is already in the black square lists
-    if ((black_xs.hasValue(black_x) == true) && (black_ys.hasValue(black_y) == true)) {
+    println(black_x);
+    
+    boolean found = false;
       //remove from the black square lists
-      for (int i = 0; i < black_xs.size(); i++) {
+    for (int i = 0; i < black_xs.size(); i++) {
         if ((black_xs.get(i) == black_x) && (black_ys.get(i) == black_y)) {
           black_xs.remove(i);
           black_ys.remove(i);
+          found = true;
         }
+        
       }
    //if position is not already in list, add to list
-    } else {
+    if (found == false) {
+      println("added");
       black_xs.append(black_x);
       black_ys.append(black_y);
     }
+    
+    println(black_xs);
+    println(black_ys);
     
   
     
